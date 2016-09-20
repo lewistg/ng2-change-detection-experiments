@@ -1,7 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface NodeComponentIndex {
+  row: number;
+  col: number;
+}
 
 @Component({
     selector: 'node',
-    template: '<div></div>'
+    template: '<div>Component</div>'
 })
-export class NodeComponent { }
+export class NodeComponent {
+  index: NodeComponentIndex;
+}
